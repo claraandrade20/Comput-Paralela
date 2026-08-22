@@ -1,5 +1,7 @@
 package paralelo;
+
 public class Tarefa extends Thread {
+  
 private final long valorInicial;
 private final long valorFinal;
 private long total = 0;
