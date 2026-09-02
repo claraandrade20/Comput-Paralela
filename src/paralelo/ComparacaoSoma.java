@@ -5,9 +5,9 @@ public class ComparacaoSoma {
         long[] quantidades = {10_000L, 1_000_000L, 100_000_000L, 1_000_000_000L};
 
         for (long N : quantidades) {
-            System.out.println("---- Quantidade de números: " + N + " ----");
+            System.out.println("Quantidade de números: " + N + " ");
 
-            // ---------- Versão SERIAL ----------
+            // Versão Serial
             long inicioMillisSerial = System.currentTimeMillis();
             long inicioNanoSerial = System.nanoTime();
 
@@ -25,7 +25,7 @@ public class ComparacaoSoma {
             System.out.println("Soma Serial  : " + somaSerial);
             informarTempos("Serial", tempoMillisSerial, tempoNanoSerial);
 
-            // ---------- Versão PARALELA (4 threads / TAD Tarefa) ----------
+            // Versão Paralela
             long inicioMillisParalelo = System.currentTimeMillis();
             long inicioNanoParalelo = System.nanoTime();
 
