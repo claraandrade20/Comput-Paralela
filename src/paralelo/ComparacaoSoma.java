@@ -25,11 +25,12 @@ public class ComparacaoSoma {
             System.out.println("Soma Serial  : " + somaSerial);
             informarTempos("Serial", tempoMillisSerial, tempoNanoSerial);
 
-            // ---------- Versão PARALELA (TAD Tarefa / 4 threads) ----------
+            // ---------- Versão PARALELA (4 threads / TAD Tarefa) ----------
             long inicioMillisParalelo = System.currentTimeMillis();
             long inicioNanoParalelo = System.nanoTime();
 
             long pedaco = N / 4;
+
             Tarefa t1 = new Tarefa(1, pedaco);
             Tarefa t2 = new Tarefa(pedaco + 1, pedaco * 2);
             Tarefa t3 = new Tarefa(pedaco * 2 + 1, pedaco * 3);
@@ -59,7 +60,6 @@ public class ComparacaoSoma {
 
             System.out.println("Soma Paralela: " + somaParalela);
             informarTempos("Paralelo", tempoMillisParalelo, tempoNanoParalelo);
-
             System.out.println("Somas iguais? " + (somaSerial == somaParalela));
             System.out.println();
         }

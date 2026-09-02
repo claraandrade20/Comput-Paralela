@@ -7,7 +7,7 @@ public class ParallelSumExample {
         int n = 50_000_000;
         int p = 4; // número de processadores (núcleos)
 
-        // ---------- Versão SEQUENCIAL ----------
+        //versão sequencial
         long inicioMillisSeq = System.currentTimeMillis();
         long inicioNanoSeq = System.nanoTime();
 
