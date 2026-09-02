@@ -1,3 +1,5 @@
+package paralelo;
+
 public class ParallelSumExample {
 
     public static void main(String[] args) {
